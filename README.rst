@@ -67,3 +67,9 @@ In this window, up and down arrow keys will move through the slice layers,
 and the 'q' key will quit and close the window.  The keys `1` - `4` or
 `-` and `=` will zoom the image.
 
+Once the gcode file is created, you can make the timestamped trajectory in the form of a pickle file using::
+
+    python air3d/gcode_to_trajectory.py path/to/gcode_file.gcode COMMAND_RATE
+
+with the optional argument COMMAND_RATE to be given in Hz, which is the rate at which you want to send the commands to the robot.
+This will generate a .pickle file in the same folder as the gcode file, with the same file name plus the command rate.
