@@ -86,9 +86,9 @@ slicer_configs = OrderedDict([
     )),
     ('Machine', (
         ('bed_geometry',      list, 'Rectangular', ('Rectangular', 'Cylindrical'), "The shape of the build volume cross-section."),
-        ('bed_size_x',        float,  2000, (0,2000),    "The X-axis size of the build platform bed."),
+        ('bed_size_x',        float,  1000, (0,2000),    "The X-axis size of the build platform bed."),
         ('bed_size_y',        float,  2000, (0,2000),    "The Y-axis size of the build platform bed."),
-        ('bed_center_x',      float,  1000, (0,2000),  "The X coordinate of the center of the bed."),
+        ('bed_center_x',      float,     0, (0,2000),  "The X coordinate of the center of the bed."),
         ('bed_center_y',      float,  1000, (0,2000),  "The Y coordinate of the center of the bed."),
         ('bed_temp',          int,      70, (0, 150),    "The temperature to set the heated bed to."),
 
